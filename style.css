@@ -414,13 +414,19 @@ img {
     border-radius: 8px;
 }
 
-@media (max-width: 700px) {
-    .container-txt-BOX {
-        text-align: justify;
 
+@media (max-width: 700px) {
+    .container-txt-box {
+        text-align: justify;
+        margin: 0; 
+        padding: 0; 
+        font-size: 14px;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 5px;
+        letter-spacing: -0.4px; /* Ajusta la separación entre letras */
     }
 }
-
 
 
 
