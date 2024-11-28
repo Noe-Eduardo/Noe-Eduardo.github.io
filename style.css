@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-   /*  background-color: rgb(237, 237, 237); */
-    background-color: rgb(237, 237, 237);
+   background-color: rgb(237, 237, 237); 
+    
     cursor: default;
     overflow-x: hidden;
 
@@ -731,7 +731,7 @@ li {
 
 img {
     width: auto;
-    height: 180px;
+    height: 160px;
 }
 
 
@@ -1635,8 +1635,9 @@ canvas {
 
     .info {
         padding: 15px;
-        background-color: rgb(237, 237, 237);
-        height: 440px;
+       
+        height: 470px;
+        width: 322px;
         font-size: 12px;
     }
 
