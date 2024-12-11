@@ -2107,7 +2107,7 @@ canvas {
     justify-content: center;
     padding: 20px;
     height: 400px;
-    width: 100hv;
+    width: 100vw;
 }
 .wp-img{
     display: flex;
