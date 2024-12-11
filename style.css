@@ -2113,7 +2113,7 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: end;
-    width: 400px;
+    width: 270px;
     background-color: rgb(237, 237, 237);
     height: 200px;
 }
@@ -2121,6 +2121,14 @@ canvas {
     width: auto;
     height: 60px;
 }
+@media (max-width: 700px) {
+    .img, img {
+        width: auto;
+        height: 50px;
+
+    }
+}
+
 .img, img:hover{
     cursor: pointer;
     transform: scale(1.1);
