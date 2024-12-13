@@ -2113,7 +2113,7 @@ canvas {
     justify-content: center;
     padding: 20px;
     height: 400px;
-    width: 100vw;
+    width: auto;
 }
 .wp-img{
     display: flex;
