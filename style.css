@@ -702,35 +702,20 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
+    width: 400px;
     height: 370px;
     border-radius: 5px;
     /* outline: 1px solid #000000; */
+    
     position: relative;
     overflow: hidden;
 }
 
-.box::after {
-    content: "Isotipo N (nera)";
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    outline: 1px solid #000;
-    color: #ffffff;
-    background: #000000;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-}
+
 
 .box:hover::after {
     opacity: 1;
+    transform: scale(1.2);
 
 }
 
@@ -738,9 +723,16 @@ img {
     width: auto;
     height: 160px;
 }
-
-
-
+.box-img{
+    height: 180px;
+    width: auto;
+}
+@media (max-width: 700px) {
+    .box-img {
+        height: 140px;
+        width: auto;
+    }
+    }
 
 .header-end {
     display: flex;
@@ -1440,10 +1432,10 @@ canvas {
 .box-video {
     display: flex;
     justify-content: left;
-    background-color: rgb(237, 237, 237);
+   
     padding: 20px;
-    width: 180px;
-    height: 350px;
+    width: 240px;
+    height: 400px;
 
 }
 
@@ -1456,7 +1448,8 @@ canvas {
 @media (max-width: 700px) {
     .box-video {
         align-items: center;
-        width: 200px;
+        background-color: rgb(237, 237, 237);
+        width: 240px;
         height: 400px;
 
     }
@@ -1595,7 +1588,7 @@ canvas {
 }
 
 .info {
-    height: 450px;
+    height: 470px;
     width: 450px;
     font-size: 12px;
     background-color: rgb(237, 237, 237);
@@ -1640,8 +1633,7 @@ canvas {
 
     .info {
         padding: 15px;
-
-        height: 470px;
+        height: 510px;
         width: 322px;
         font-size: 12px;
     }
