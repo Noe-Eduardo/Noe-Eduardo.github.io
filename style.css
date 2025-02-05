@@ -706,7 +706,7 @@ li {
     height: 370px;
     border-radius: 5px;
     /* outline: 1px solid #000000; */
-    
+
     position: relative;
     overflow: hidden;
 }
@@ -723,16 +723,18 @@ img {
     width: auto;
     height: 160px;
 }
-.box-img{
+
+.box-img {
     height: 180px;
     width: auto;
 }
+
 @media (max-width: 700px) {
     .box-img {
         height: 140px;
         width: auto;
     }
-    }
+}
 
 .header-end {
     display: flex;
@@ -1432,7 +1434,7 @@ canvas {
 .box-video {
     display: flex;
     justify-content: left;
-   
+
     padding: 20px;
     width: 240px;
     height: 400px;
@@ -2098,7 +2100,7 @@ canvas {
 
 
 
-.wp{
+.wp {
     background-color: rgb(237, 237, 237);
     display: flex;
     align-items: end;
@@ -2107,7 +2109,8 @@ canvas {
     height: 400px;
     width: auto;
 }
-.wp-img{
+
+.wp-img {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -2115,19 +2118,236 @@ canvas {
     background-color: rgb(237, 237, 237);
     height: 200px;
 }
-.img, img{
+
+.img,
+img {
     width: auto;
     height: 60px;
 }
+
 @media (max-width: 700px) {
-    .img, img {
+
+    .img,
+    img {
         width: auto;
         height: 50px;
 
     }
 }
 
-.img, img:hover{
+.img,
+img:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aside-x {
+    display: grid;
+    height: 800px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.image-grid-01x,
+.image-grid-02x,
+.image-grid-03x,
+.image-grid-04x,
+.image-grid-05x,
+.image-grid-06x {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+
+
+}
+
+.image-grid-01x {
+
+    background-image: url(assets/Assets/Caja\ Querida\ 01-Caja\ -\ A.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 3/5;
+    grid-row: 3/7;
+    
+   
+}
+
+.image-grid-01x:hover {
+    filter: brightness(100%) blur(0);
+    transition: filter 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .image-grid-01x {
+        grid-column: 4/8;
+        grid-row: 3/5;
+    
+    }
+}
+
+.image-grid-02x {
+    background-image: url(assets/Assets/Caja\ Querida\ -\ 2\ Tintas\ -\ Cateya\ Orchid\ -\ Caja.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 5/7;
+    grid-row: 3/7;
+    
+}
+
+.image-grid-02x:hover {
+    filter: brightness(100%) blur(0);
+    transition: filter 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .image-grid-02x {
+        grid-column: 4/8;
+        grid-row: 5/7;
+
+    }
+}
+
+
+.image-grid-03x {
+    background-image: url(assets/Assets/Caja\ Querida\ -\ 2\ Tintas\ -\ Arabesque\ -\ Caja.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: 7/9;
+    grid-row: 3/7;
+   
+}
+
+.image-grid-03x:hover {
+    filter: brightness(100%) blur(0);
+    transition: filter 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .image-grid-03x {
+        grid-column: 4/8;
+        grid-row: 7/9;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .image-grid-04x {
+    background-image: url(assets/img/img-jpg/4.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 5/7;
+    grid-row: 6/9;
+
+    filter: brightness(80%) blur(2px);
+}
+
+.image-grid-04x:hover {
+    filter: brightness(100%) blur(0);
+    transition: filter 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    .image-grid-04x {
+        grid-column: 2/10;
+        grid-row: 8/10;
+
+    }
+} */
+
+/* .image-grid-05x {
+    background-image: url(assets/img/img-jpg/5.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 7/9;
+    grid-row: 6/11;
+    filter: brightness(80%) blur(2px);
+}
+
+.image-grid-05x:hover {
+    filter: brightness(100%) blur(0);
+    transition: filter 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    .image-grid-05x {
+        grid-column: 2/6;
+        grid-row: 10/11;
+
+    }
+} */
+
+.image-grid-06x {
+    background-image: url(assets/Assets/Sticker/Sticker\ Cubo.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 3/9;
+    grid-row: 7/11;
+    background-position: center;
+    
+}
+
+.image-grid-06x:hover {
+    filter: brightness(100%) blur(0);
+    transition: filter 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .image-grid-06x {
+        grid-column: 4/8;
+        grid-row: 9/11;
+
+    }
+}
+
+.image-grid-07x {
+    display: grid;
+    align-items: end;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .image-grid-07x {
+        grid-column: 4/5;
+       
+        grid-row: 11/11;
+
+    }
 }
